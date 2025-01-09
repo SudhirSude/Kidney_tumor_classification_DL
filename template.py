@@ -1,5 +1,5 @@
-#conda create --name Kidney_tumor_classification_DL python=3.8
-#conda activate Kidney_tumor_classification_DL
+#conda create -n kidney python=3.8
+#conda activate kidney
 
 import os
 from pathlib import Path
