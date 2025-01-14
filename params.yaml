@@ -4,3 +4,21 @@
 # Model architecture settings (e.g., number of layers, layer sizes)
 
 key : val
+
+AUGMENTATION: True
+IMAGE_SIZE: [224, 224, 3]  # as per VGG 16 model
+BATCH_SIZE: 16
+INCLUDE_TOP: False
+EPOCHS: 1
+CLASSES: 2
+WEIGHTS: imagenet
+LEARNING_RATE: 0.01  #step size at each iteration
+
+#Data augmentation techniques (like flipping, rotation, or scaling) will be applied to the training data
+#A batch size of 16 means the model processes 16 images at a time before updating the weights.
+#Setting INCLUDE_TOP to False removes the fully connected layers (typically used for classification) from the model.
+#WEIGHTS: imagenet  means The model is pre-trained on the large-scale ImageNet dataset.
+
+
+
+
